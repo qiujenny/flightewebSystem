@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2018-08-22 15:42:28;
+ * @version $Id$
+ */
+
+p, a {
+  text-decoration: none
+}
+
+.texralign {
+  text-align: center;
+}
+
+/**
+ * body
+ */
+.login_shade {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  min-width: 1260px;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.login_body {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/**
+ * 左边
+ */
+.body_left {
+  float: left;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: RGBA(54, 159, 255, 0.8);
+}
+
+.body_left img {
+  position: absolute;
+}
+
+.login_main_icon {
+  z-index: 3;
+}
+.login_main_img{
+  z-index: 2;
+  left: 29%;
+  top: 50%;
+  transform: translate(-29%, -50%);
+}
+
+/**
+ * 右边
+ */
+.body_right {
+  float: right;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  height: 100%;
+}
+
+.login_logo {
+  display: block;
+  max-width: 200px;
+  max-height: 180px;
+  margin: 120px auto 0 auto;
+}
+
+.demo-spin-col{
+  height: 100px;
+  position: relative;
+  border: 1px solid #eee;
+}
+
+/**
+ * 登录框表单
+ */
+.form_box {
+  margin: auto;
+  text-align: center;
+  margin-top: 46px;
+  .ant-input-affix-wrapper .ant-input {
+    border: 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.form_code {
+  position: absolute;
+  right: 0;
+  width: auto;
+  display: inline;
+  height: auto;
+}
+
+.input_submit {
+  width: 230px;
+  height: 42px;
+  background: #369fff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.input_submit:hover {
+  cursor: pointer;
+  background: #1c89ed;
+
+}
+
+.login_bottom {
+  position: relative;
+  bottom: 34px;
+  font-size: 12px;
+  color: #a7a7a7;
+  opacity: 0.4;
+  a {
+    color: #a7a7a7;
+    cursor: pointer;
+  }
+}
+.main-padding {
+  min-width: 1440px;
+}
+
+.forgetPassword {
+  color: #00AEF0;
+  text-decoration: underline;
+  float: right;
+}
