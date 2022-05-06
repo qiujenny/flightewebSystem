@@ -91,7 +91,7 @@ export default {
       return this.$store.state.app.tagNavList;
     },
     menuList() {
-      return this.$store.state.user.userMenuList;
+      return this.$store.state.user.userMenuList[0].children;
     },
     userName() {
       if (sessionStorage.loginUserName && sessionStorage.loginUserName.length > 5) {

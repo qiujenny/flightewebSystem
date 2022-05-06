@@ -12,12 +12,12 @@
       ref="menuLay"
       @openChange='openChange'
     >
-      <template v-for="(item) in menuList">
-        <a-menu-item v-if="!item.children" :key="item.name">
+      <template v-for="(item) in menuList.filter(i => !i.meta.hide)">
+        <a-menu-item v-if="!item.children || !item.children.filter(i => !i.meta.hide).length" :key="item.name">
           <a-icon :type="item.meta.icon" />
           <span>{{ item.meta.title }}</span>
         </a-menu-item>
-        <a-sub-menu :key="item.name" v-else>
+        <a-sub-menu v-else :key="item.name">
           <span slot="title">
             <a-icon :type="item.meta.icon" /><span>{{ item.meta.title }}</span>
           </span>

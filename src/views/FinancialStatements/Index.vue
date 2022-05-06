@@ -1,8 +1,8 @@
 <!--
  * @Autor: nvzhen.qiu
- * @Date: 2022-04-29 11:39:49
+ * @Date: 2022-04-29 16:57:12
  * @LastEditors: nvzhen.qiu
- * @LastEditTime: 2022-04-29 11:54:11
+ * @LastEditTime: 2022-05-06 15:10:17
  * @Description: 
 -->
 <template>
@@ -13,6 +13,16 @@
 
 <script>
 export default {
-  name: 'baseData'
+  name: 'financialStatements',
+  data() {
+    return {
+    };
+  },
+  mounted() {
+  }
 };
 </script>
+
+<style>
+
+</style>

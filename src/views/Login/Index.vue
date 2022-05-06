@@ -47,15 +47,15 @@ export default {
     ...mapMutations(['addTag']),
     handleSubmit({ loginName, loginPw, validateCode, flag }) {
       this.loadingSubmit = true;
-      this.$router.push({ name: 'users' });
-      this.addTag({
-        path: `${baseRouter_path}users`,
-        name: 'users',
-        meta: {
-          title: '帐户管理',
-          fatherName: 'userManagement',
-        },
-      });
+      // this.$router.push({ name: 'users' });
+      // this.addTag({
+      //   path: `${baseRouter_path}users`,
+      //   name: 'users',
+      //   meta: {
+      //     title: '帐户管理',
+      //     fatherName: 'userManagement',
+      //   },
+      // });
       this.handlePrivilegeMenu(true);
       // const payload = { loginName: loginName.trim(), loginPw, validateCode, flag };
       // this.handleLogin(payload).then(response => {
