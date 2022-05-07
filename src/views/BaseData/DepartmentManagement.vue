@@ -70,7 +70,7 @@ import locale from 'ant-design-vue/es/date-picker/locale/zh_CN';
 import membershipsApi from '@/api/membershipsApi';
 
 export default {
-  name: 'MemberShip',
+  name: 'departmentManagement',
   data() {
     return {
       locale,

@@ -25,7 +25,7 @@ import TableCom from '@/components/Shop/TableCom.vue';
 import SearchForm from '@/components/Shop/SearchForm.vue';
 
 export default {
-  name: 'CreateShop',
+  name: 'companyMainBody',
   components: {
     SearchForm,
     TableCom

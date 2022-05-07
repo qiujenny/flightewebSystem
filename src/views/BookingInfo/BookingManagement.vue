@@ -77,7 +77,7 @@ import { orderList, exportList, shopWrdList } from '../../api/order';
 import { downloadExcel } from '../../libs/tools';
 
 export default {
-  name: 'order',
+  name: 'bookingManagement',
   components: {
     tableHeader
   },

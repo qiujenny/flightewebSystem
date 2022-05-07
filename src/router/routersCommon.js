@@ -43,13 +43,13 @@ export default [
         component: () => import('@/views/BaseData/Index.vue'),
         children: [
           {
-            path: `${baseRouter_path}createShop`,
-            name: 'createShop',
+            path: `${baseRouter_path}companyMainBody`,
+            name: 'companyMainBody',
             meta: {
-              title: '创建店铺',
+              title: '公司主体',
               fatherName: 'BaseData',
             },
-            component: () => import('@/views/BaseData/CreateShop.vue')
+            component: () => import('@/views/BaseData/CompanyMainBody.vue')
           },
           {
             path: `${baseRouter_path}addOrEditShop/:shopId`,
@@ -72,43 +72,106 @@ export default [
             component: () => import('@/components/Shop/ShopDetail.vue')
           },
           {
-            path: `${baseRouter_path}memberShip`,
-            name: 'memberShip',
+            path: `${baseRouter_path}departmentManagement`,
+            name: 'departmentManagement',
             meta: {
-              title: '会员信息',
+              title: '部门管理',
               fatherName: 'BaseData',
             },
-            component: () => import('@/views/BaseData/MemberShip.vue')
+            component: () => import('@/views/BaseData/DepartmentManagement.vue')
+          },
+          {
+            path: `${baseRouter_path}postmentManagement`,
+            name: 'postmentManagement',
+            meta: {
+              title: '岗位管理',
+              fatherName: 'BaseData',
+            },
+            component: () => import('@/views/BaseData/PostmentManagement.vue')
+          },
+          {
+            path: `${baseRouter_path}staffManagement`,
+            name: 'staffManagement',
+            meta: {
+              title: '员工管理',
+              fatherName: 'BaseData',
+            },
+            component: () => import('@/views/BaseData/StaffManagement.vue')
+          },
+          {
+            path: `${baseRouter_path}staffAuthorize`,
+            name: 'staffAuthorize',
+            meta: {
+              title: '员工授权',
+              fatherName: 'BaseData',
+            },
+            component: () => import('@/views/BaseData/StaffAuthorize.vue')
+          },
+          {
+            path: `${baseRouter_path}postAuthorize`,
+            name: 'postAuthorize',
+            meta: {
+              title: '岗位授权',
+              fatherName: 'BaseData',
+            },
+            component: () => import('@/views/BaseData/PostAuthorize.vue')
+          },
+          {
+            path: `${baseRouter_path}correspondenceUnit`,
+            name: 'correspondenceUnit',
+            meta: {
+              title: '往来单位',
+              fatherName: 'BaseData',
+            },
+            component: () => import('@/views/BaseData/CorrespondenceUnit.vue')
           },
         ]
       },
       {
-        path: `${baseRouter_path}OrderInfo`,
-        name: 'OrderInfo',
+        path: `${baseRouter_path}BookingInfo`,
+        name: 'BookingInfo',
         meta: {
           icon: 'user',
           title: '订舱信息',
         },
-        component: () => import('@/views/OrderInfo/Index.vue'),
+        component: () => import('@/views/BookingInfo/Index.vue'),
         children: [
           {
-            path: `${baseRouter_path}orders`,
-            name: 'orders',
+            path: `${baseRouter_path}bookingManagement`,
+            name: 'bookingManagement',
             meta: {
               title: '订单管理',
-              fatherName: 'OrderInfo',
+              fatherName: 'BookingInfo',
             },
-            component: () => import('@/views/OrderInfo/Order.vue'),
+            component: () => import('@/views/BookingInfo/BookingManagement.vue'),
           },
           {
             path: `${baseRouter_path}orderDetails`,
             name: 'orderDetails',
             meta: {
               hide: true,
-              fatherName: 'OrderInfo',
+              fatherName: 'BookingInfo',
               title: '订单详情',
             },
-            component: () => import('@/views/OrderInfo/OrderDetails.vue')
+            component: () => import('@/views/BookingInfo/OrderDetails.vue')
+          },
+          {
+            path: `${baseRouter_path}ladingBillManagement`,
+            name: 'ladingBillManagement',
+            meta: {
+              title: '提单管理',
+              fatherName: 'BookingInfo',
+            },
+            component: () => import('@/views/BookingInfo/LadingBillManagement.vue'),
+          },
+          {
+            path: `${baseRouter_path}warehouseRegistration`,
+            name: 'warehouseRegistration',
+            meta: {
+              title: '留仓登记',
+              fatherName: 'BookingInfo',
+            },
+            component: () => import('@/views/BookingInfo/WarehouseRegistration.vue'),
           },
         ]
       },
